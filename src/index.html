@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="root">
+    <!-- Cipher -->
+    <form>
+        <h1>Cipher</h1>
+        <div class="container-input">
+          <input type="text" id="message" required/>
+          <label>Message</label>
+        </div>
+        <div class="container-input">
+          <input type="text" id="number" required/>
+          <label>Offset</label>
+        </div>
+        <button id="btn-encode">Encode</button>
+        <button id="btn-decode">Decode</button>
+    </form>
+
+    <!-- Cipher with offset -->
+    <form>
+        <h1>Cipher with Offset</h1>
+        <div class="container-input">
+          <input type="text" id="messageWithOffset" required/>
+          <label>Message</label>
+        </div>
+        <button id="btn-encodeWithOffset">Encode with offset 3</button>
+        <button id="btn-decodeWithOffset">Decode with offset 3</button>
+    </form>
+  </div>
+
+  <!-- Contenedor resultado Cifrado o Descifrado -->
+  <div id="result">
+    <h1>Message:</h1>
+    <p id="result-paragraph"></p>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

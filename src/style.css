@@ -1,0 +1,110 @@
+* {
+  font-family: Helvetica, sans-serif;
+  font-weight: light;
+}
+
+body {
+  background-color: #FF4758;
+}
+/* Estilos cajas de inputs y botones */
+#root {
+  text-align: center;
+  width: 700px;
+  float: left;
+}
+
+form {
+  padding: 30px 25px;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  margin: 40px 40px;
+}
+
+h1 {
+  color: #FF4A56;
+  text-align: center;
+}
+
+button {
+  margin-top: 35px;
+  background-color: #FFFFFF;
+  border: 1px solid #FF4A56;
+  line-height: 0;
+  font-size: 17px;
+  padding: 20px 15px;
+  border-radius: 60px;
+  color: #FF4A56;
+}
+
+form button:hover, form button:focus {
+  color: #FFFFFF;
+  background-color: #FF4A56;
+}
+
+.container-input {
+  padding: 10px 0;
+}
+
+label {
+  color: #FF4A56;
+  font-size: 17px;
+  padding: 10px 15px;
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  z-index: 2;
+}
+
+input[type="text"] {
+  appearance: none;
+  background-color: none;
+  border: 1px solid #FF4A56;
+  line-height: 0;
+  font-size: 17px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 60px;
+  color: #FF4A56;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+form .container-input input[type="text"]:focus {
+  outline: none;
+  background: #ff4a56;
+  color: white;
+  margin-top: 30px;
+}
+
+form .container-input input[type="text"]:valid {
+  margin-top: 30px;
+}
+
+form .container-input input[type="text"]:focus ~ label {
+  transform: translate(0, -35px);
+}
+
+form .container-input input[type="text"]:valid ~ label {
+  text-transform: uppercase;
+  transform: translate(5px, -35px) scale(0.6);
+}
+
+/* Estilo resultado cifrado y descifrado */
+
+#result {
+  width: 600px;
+  height: 720px;
+  background-color: #FFFFFF;
+  float: right;
+  margin: 40px;
+  border-radius: 40px;
+}
+
+p {
+  color: #FF4A56;
+  margin: 50px;
+}
